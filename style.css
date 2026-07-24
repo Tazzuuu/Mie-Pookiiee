@@ -1,0 +1,121 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0d0d0d;
+font-family:Arial,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+#app{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.card{
+width:320px;
+background:#1a1a1a;
+padding:30px;
+border-radius:20px;
+text-align:center;
+}
+.card{
+box-shadow:0 0 25px rgba(255,105,180,0.4);
+}
+
+h1{
+color:white;
+font-size:28px;
+margin-bottom:15px;
+}
+
+.quote{
+color:#ffb6d9;
+font-size:16px;
+line-height:1.6;
+}
+button{
+margin-top:20px;
+padding:12px 25px;
+background:#ff4fa3;
+color:white;
+border:none;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#ff77bb;
+transform:scale(1.05);
+}
+#note{
+min-height:80px;
+animation:fade 0.6s;
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(15px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+.heart{
+position:fixed;
+font-size:20px;
+animation:float 4s linear forwards;
+pointer-events:none;
+}
+
+@keyframes float{
+0%{
+transform:translateY(0);
+opacity:1;
+}
+
+100%{
+transform:translateY(-250px);
+opacity:0;
+}
+}
+body{
+background:linear-gradient(-45deg,#0d0d0d,#1b1028,#2a163d,#0d0d0d);
+background-size:400% 400%;
+animation:bgMove 12s ease infinite;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+.typing{
+overflow:hidden;
+white-space:pre-line;
+animation:typing 4s steps(80,end);
+}
+
+@keyframes typing{
+from{
+max-width:0;
+}
+
+to{
+max-width:100%;
+}
+}
